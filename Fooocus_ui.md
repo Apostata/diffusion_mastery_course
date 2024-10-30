@@ -129,7 +129,8 @@ Same as the enhance settings, you can enhance the image.
 Get the metadata from the image. You can get the metadata from the image by uploading the image and clicking on the button.
 Metadata is the data that describes the image, for example, the size of the image, the format of the image, the date that the image was created, the model used to generate this image, etc.
 
-
+## Extra
+As de default checkpoint of `Fooocus` is Juggernaut XL, here is a link to guide a good prompt for this model: [Juggernaut XL Prompt Guide](https://learn.rundiffusion.com/prompt-guide-for-juggernaut-xi-and-xii/)
 
 [BACK to Stable Diffusion models](./stable_difusion.md)\
 [BACK TO BEGIN](./README.md)

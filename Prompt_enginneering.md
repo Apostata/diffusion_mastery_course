@@ -6,7 +6,7 @@ This process is crucial for getting the best results from a model, as the prompt
 Fewer details means means more variety, but less control. Make clear wich relationship or details are important to you. Considering:
 * **Theme:** Person, character, place, object.
 * **Medium:** Photo, painting, Ilustration, sculpture, doodle.
-* **Setting:** Indoors, outdoors, on the moon, underwater, in the city
+* **Setting or Context:** Indoors, outdoors, on the moon, underwater, in the city
 * **Lighting:** Soft, ambient, cloudy, neon, studio lights
 * **Color:** Vibrant, muted, bright, monochrome, colorful, black and white, pastel
 * **Mood:** Thoughtful, calm, exuberant, energetic, melancholic, happy, sad
@@ -17,6 +17,10 @@ Fewer details means means more variety, but less control. Make clear wich relati
  examples:
  * cat, angry = cat will have more
  * angry cat = angry will have more emphasis
+
+**NOTE:** some models work better with a limited number o tokens, so keep the prompt concise and to the point. And some models works better with a specific aspect ratio, so consider this when creating your prompt.
+1 Token = 
+
 
 Sample of good prompt:  
 `An ilustration of a cat, relaxed, in a city, in vibrant colors, full-body view, at golden hour, with a 16:9 aspect ratio.`

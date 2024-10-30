@@ -10,6 +10,7 @@ in a layman's terms, Diffusion models are a type of AI that generate images from
 ## Content
 * [Some Diffusion models Available](./some_diffusion_models.md)
 * [Prompt engineering](./Prompt_enginneering.md)
+* [Prompt Engineering in Stable Diffusion](./prompt_stable_diffusion.md)
 * [Aspect Ratios](./aspect_ratios.md)
 * [chatGPT and Dall-e](./chatgpt_dalle.md)
 * [Stable Diffusion](./stable_difusion.md)
