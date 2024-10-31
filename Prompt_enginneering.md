@@ -129,9 +129,9 @@ Result in Dall-e:
 * Bored: creates a bored scene.
 * etc...
 
-### Link to Diffusion Arnold's prompt generator
-https://chatgpt.com/g/g-UWwaZQUSH-diffuson-prompts
-
+### Link to Diffusion Arnold's prompt generators
+For Dall-e :https://chatgpt.com/g/g-UWwaZQUSH-diffuson-prompts
+For Stable Diffusion: https://chatgpt.com/g/g-n7srX5zrf-prompts-fur-sdxxl
 
 ### Instructions for chatGPT act like a prompt generator for difussion models:
 
