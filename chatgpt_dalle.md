@@ -93,4 +93,4 @@ Defaults (unless otherwise specified/implied):
 gear.
 1. Always produce four images and suggest four new ideas.
 
-[BACK](./README.md)
+[BACK](./README.MD)

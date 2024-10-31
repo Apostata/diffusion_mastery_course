@@ -27,4 +27,4 @@ Forge is a interface that you can use to generate images with Stable Diffusion. 
 ### ComfyUI
 ComfyUI is a GUI for modulating the diffusion models. It is a open source project that can be used in any project. We can use Models from Stability IA, Flux, in ComfyUI. More dificult to use than the others, but more powerful.
 
-[BACK TO BEGIN](./README.md)
+[BACK TO BEGIN](./README.MD)

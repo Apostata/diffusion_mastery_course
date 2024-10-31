@@ -33,4 +33,4 @@ Since Google Colab doesn't keep the generated images stored, after you use Foooc
 That way, Google Colab will copy the images from the outputs folder to your Google Drive folder (in my case, the folder "AI").
 
 [BACK TO Fooocus UI](./fooocus_ui.md)\
-[BACK TO BEGIN](./README.md)
+[BACK TO BEGIN](./README.MD)

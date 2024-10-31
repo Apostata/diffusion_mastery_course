@@ -74,4 +74,4 @@ This is a GUI for modulating the diffusion models. It is a open source project t
 We can use Models from Stability IA, Flux, in ComfyUI.
 
 
-[BACK](./README.md)
+[BACK](./README.MD)

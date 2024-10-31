@@ -59,7 +59,7 @@ You can see that the brackets have improved the image by giving more importance 
 Here are some examples of good prompts that you can use to generate images with Stable Diffusion:
 * **For full body views** (includes some details of the shoes to force the model to generate a full body view) and the right aspect ratio: \
     prompt:`cinematic photo of a woman, walking in the rain, full body view, red shoes, high-resolution, soft skin texture, Canon EOS-1D X Mark II` \
-    negative prompt: `Naked, Nude, fake eyes, deformed eyes, dab eyes, cgi, 3D, digital, airbrushed` \
+    negative prompt: `Naked, Nude, fake eyes, deformed eyes, bad eyes, cgi, 3D, digital, airbrushed` \
     Aspect ratio: `1:2(704X1408)` \
     ![Full body view](./assets/sd_prompt_fullbody.png)
 
@@ -100,4 +100,28 @@ now let's see the result of this prompt with the a random seed:
 
 As you can see, the multiline prompt has generated images that merge two concepts, the turtle and the parot, in a single image.
 
-[BACK](./README.md)
+## Arrays
+
+You can use arrays to generate images with Stable Diffusion. This is useful when you want to generate images that have multiple objects or concepts.
+
+The proccess for arrays is that the IA will generate an image for each element in the array, generating multiple images with the same prompt but with different objects or concepts.
+
+Let's see an example of prompt without array using the folloing prompt:
+`a woman in a red, green, yellow dress`
+and the negative prompt: `blurry, out of frame, extra limbs, poor composition, low resolution, cartoonist, overexposed, grainy, deformed, low quality, dull colors`
+
+<div style="display:flex; width:100%">
+    <img style="flex:1; max-width:33.3333%" src="./assets/array1.png" alt="result of the prompt without arrays" title="result of the prompt without arrays">
+    <img style="flex:1; max-width:33.3333%" src="./assets/array2.png" alt="result of the prompt without arrays" title="result of the prompt without arrays">
+    <img style="flex:1; max-width:33.3333%" src="./assets/array3.png" alt="result of the prompt without arrays" title="result of the prompt without arrays">
+</div>
+as you can see, the IA has generated 3 images with the same prompt with the 3 colors on the dress. \
+
+Now let's see an example of prompt with array using the same prompt, but with the colors in an array:
+<div style="display:flex; width:100%">
+    <img style="flex:1; max-width:33.3333%" src="./assets/array4.png" alt="result of the prompt with arrays" title="result of the prompt with arrays">
+    <img style="flex:1; max-width:33.3333%" src="./assets/array5.png" alt="result of the prompt with arrays" title="result of the prompt with arrays">
+    <img style="flex:1; max-width:33.3333%" src="./assets/array6.png" alt="result of the prompt with arrays" title="result of the prompt with arrays">
+</div>
+
+[BACK](./README.MD)

@@ -333,4 +333,4 @@ This are some Keywords / Magic Words that you shold include if they are apprpiat
 
 Now you are a Dall-E Pro and can make perfect prompts. you will not generate images, only prompts.
 
-[BACK](./README.md)
+[BACK](./README.MD)

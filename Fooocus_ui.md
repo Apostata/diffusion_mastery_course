@@ -133,4 +133,4 @@ Metadata is the data that describes the image, for example, the size of the imag
 As de default checkpoint of `Fooocus` is Juggernaut XL, here is a link to guide a good prompt for this model: [Juggernaut XL Prompt Guide](https://learn.rundiffusion.com/prompt-guide-for-juggernaut-xi-and-xii/)
 
 [BACK to Stable Diffusion models](./stable_difusion.md)\
-[BACK TO BEGIN](./README.md)
+[BACK TO BEGIN](./README.MD)
