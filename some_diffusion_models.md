@@ -6,7 +6,7 @@ Dall-e is a model from OpenAI that generates images from text. It is based on th
 This model is good model for logos or things similar to that.
 
 example:
-prompt: `make a black and green flat 2d logo, crossed axes and a shield eith letters "VIKING STYLE"`
+prompt: `make a black and green flat 2d logo, crossed axes and a shield with letters "VIKING STYLE"`
 Prompt generated at https://chatgpt.com
 
 ![Dall-E](./assets/dall_e1.webp)
