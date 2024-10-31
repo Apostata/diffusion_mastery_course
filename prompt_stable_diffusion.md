@@ -1,22 +1,3 @@
-<style>
-    .cols {
-        display:flex; 
-        width:100%;
-    }
-    .col-2 > * {
-        flex:1; 
-        max-width:50%
-    }
-     .col-3 > * {
-        flex:1; 
-        max-width:33.3333%
-    }
-    .col-4 > * {
-        flex:1; 
-        max-width:25%
-    }
-</style>
-
 # Prompt Engineering in Stable Diffusion
 The proccess to generate images with Stable Diffusion is very similar than between other IA models, so the [Prompt Engineering Basics](./Prompt_enginneering.md) are the same, but there are some differences that you need to know.
 
@@ -44,10 +25,9 @@ now let's add a negative prompt to improve the image: `ugly, handy, blurry, bad 
 
 considering the same seed: `2602659284643670310`. Let's see how this prompt will generate the images:
 
-<div class="cols col-2">
-    <img src="./assets/sd_prompt.png" alt="result of the prompt" title="result of the prompt">
-    <img src="./assets/sd_prompt_negative.png.png" alt="result of the prompt with negative prompt" title="result of the prompt with negative prompt">
-</div>
+|  |  |
+|---|---|
+| ![result of the prompt](./assets/sd_prompt.png) | ![result of the prompt with negative prompt](./assets/sd_prompt_negative.png) |
 
 You can see that the negative prompt has improved the image by removing the unwanted elements from the image.
 
@@ -66,11 +46,9 @@ with the same negative prompt: `ugly, handy, blurry, bad eyes,  bad anatomy, out
 
 considering the same seed: `2602659284643670311`. Let's see how this prompt will generate the images:
 
-<div class="cols col-3">
-    <img src="./assets/sd_prompt2.png" alt="result of the prompt" title="result of the prompt">
-    <img src="./assets/sd_prompt_brackets1.png" alt="result of the prompt with brackets" title="result of the prompt with brackets">
-    <img src="./assets/sd_prompt_brackets2.png" alt="result of the prompt with brackets" title="result of the prompt with brackets">
-</div>
+|  |  |  |
+|---|---|---|
+| ![result of the prompt](./assets/sd_prompt2.png) | ![result of the prompt with brackets](./assets/sd_prompt_brackets1.png) | ![result of the prompt with brackets](./assets/sd_prompt_brackets2.png) |
 
 You can see that the brackets have improved the image by giving more importance to the word `winter` in the prompt, letting the image expess more the winter season more densely in each image as the value of the brackets increases.
 
@@ -111,11 +89,10 @@ negative prompt for all images: `blurry, out of frame, extra limbs, poor composi
 
 now let's see the result of this prompt with the a random seed:
 
-<div class="cols col-3">
-    <img src="./assets/merge1.png" alt="result of the prompt" title="result of the prompt">
-    <img src="./assets/merge2.png" alt="result of the prompt with brackets" title="result of the prompt with brackets">
-    <img src="./assets/merge3.png" alt="result of the prompt with brackets" title="result of the prompt with brackets">
-</div>
+
+|  |  |  |
+|---|---|---|
+| ![result of the prompt](./assets/merge1.png) | ![result of the prompt with brackets](./assets/merge2.png) | ![result of the prompt with brackets](./assets/merge3.png) |
 
 As you can see, the multiline prompt has generated images that merge two concepts, the turtle and the parot, in a single image.
 
@@ -129,31 +106,30 @@ Let's see an example of prompt without array using the folloing prompt:
 `a woman in a red, green, yellow dress`
 and the negative prompt: `blurry, out of frame, extra limbs, poor composition, low resolution, cartoonist, overexposed, grainy, deformed, low quality, dull colors`
 
-<div class="cols col-3">
-    <img src="./assets/array1.png" alt="result of the prompt without arrays" title="result of the prompt without arrays">
-    <img src="./assets/array2.png" alt="result of the prompt without arrays" title="result of the prompt without arrays">
-    <img src="./assets/array3.png" alt="result of the prompt without arrays" title="result of the prompt without arrays">
-</div>
+|  |  |  |
+|---|---|---|
+| ![result of the prompt](./assets/array1.png) | ![result of the prompt](./assets/array2.png) | ![result of the prompt](./assets/array3.png) |
+
 as you can see, the IA has generated 3 images with the same prompt with the 3 colors on the dress.
 
 Now let's see an example of prompt with array using the same prompt, but with the colors in an array:\
 new prompt: `a woman in a [red, green, yellow] dress`
-<div class="cols col-3">
-    <img src="./assets/array4.png" alt="result of the prompt with arrays" title="result of the prompt with arrays">
-    <img src="./assets/array5.png" alt="result of the prompt with arrays" title="result of the prompt with arrays">
-    <img src="./assets/array6.png" alt="result of the prompt with arrays" title="result of the prompt with arrays">
-</div>
+
+|  |  |  |
+|---|---|---|
+| ![result of the prompt](./assets/array4.png) | ![result of the prompt](./assets/array5.png) | ![result of the prompt](./assets/array6.png) |
+
 Now you can see that the IA has generated 3 images with the same prompt with the 3 colors on the dress, but now the colors seens to be more separated in the dress.
  
 <br/>
 
 Lastly, let's see an example of prompt with array using the same prompt, but with the colors in an **double** array:\
 new prompt: `a woman in a [[red, green, yellow]] dress`
-<div class="cols col-3">
-    <img src="./assets/array7.png" alt="result of the prompt with double arrays" title="result of the prompt with double arrays">
-    <img src="./assets/array8.png" alt="result of the prompt with double arrays" title="result of the prompt with double arrays">
-    <img src="./assets/array9.png" alt="result of the prompt with double arrays" title="result of the prompt with double arrays">
-</div>
+
+|  |  |  |
+|---|---|---|
+| ![result of the prompt](./assets/array7.png) | ![result of the prompt](./assets/array8.png) | ![result of the prompt](./assets/array9.png) |
+
 Now you can see that the IA has generated 3 images with only one color on the dress, 1 image per color in the double array.
 
 ### Array conclusion
