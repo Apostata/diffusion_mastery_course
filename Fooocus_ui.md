@@ -103,7 +103,7 @@ The enhanced settings checkbox is where you can change things like the upscaling
 ### Input Image settings checkbox
 
 The input image settings checkbox is where you can change things like the inpaint method, inpaint prompt, original prompt, inpaint respective field, and details method. Ever with a selected image, you can change the prompt and inpaint method to generate a new image.\
-[GO TO Input Image settings checkbox content](./Fooocus_ui_input_image_checkbox.md)
+[GO TO Input Image settings checkbox content](./Foocus_ui_input_image_checkbox.md)
 
 
 
