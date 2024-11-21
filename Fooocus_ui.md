@@ -75,7 +75,7 @@ DreamShaper XL (Checkpoint)(goes in second line): `!wget -O /content/Fooocus/mod
 Detail Tweaker XL (LoRA)(goes in third line): `!wget -Lo /content/Fooocus/models/loras/DetailTweaker-XL.safetensors https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor`
 
 so as you can see `!wget -O` is for getting the checkpoint and `!wget -Lo` is for getting the LoRA.
-In colab you well need to run each line.
+In colab you well need to run each line.\
 [open in colab](https://colab.research.google.com/github/Apostata/Apostata/blob/main/fooocus_colab.ipynb)
 
 ## The interface
