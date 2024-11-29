@@ -112,6 +112,8 @@ The input image settings checkbox is where you can change things like the inpain
 ### Consistent Characters
 If you want to generate images with consistent characters, in the [Multiple controlnets](./Foocus_ui_input_image_checkbox.md#multiple-methods) section there is a sample use case of how to generate images with consistent characters, using `FaceSwap` and `PyraCanny` methods. One litte aditional thing is that you use the same `seed` instead of the random seed to generate the images with the same characters (this configuration is found at the [Random seed](./Fooocus_ui_advanced_checkbox.md#random-seed)).
 
+[Advanced consistent characters guide](./Fooocus_consistent_characters.md)
+
 ### Juggernaut XL Prompt Guide
 As de default checkpoint of `Fooocus` is Juggernaut XL, here is a link to guide a good prompt for this model: [Juggernaut XL Prompt Guide](https://learn.rundiffusion.com/prompt-guide-for-juggernaut-xi-and-xii/)
 
