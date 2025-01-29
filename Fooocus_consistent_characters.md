@@ -137,3 +137,89 @@ seed: `644515184151156`
 |                                                   |                                                   |
 | ------------------------------------------------- | ------------------------------------------------- |
 | ![Result 1](./assets/second_approach_result1.png) | ![Result 2](./assets/second_approach_result2.png) |
+
+### Poses
+
+[Anatomy reference](https://anatomy360.info/anatomy-scan-reference-dump/)\
+plaste on console: `$('.onp-sl-overlap-locker-box')[0].style.display='none'; $('.onp-sl-overlap-background').remove(); $('.onp-sl-blur-area')[0].style.filter = 'none'` (remove modal and blur, dev console)
+
+[PoseMyArt](https://posemyart.com/)
+
+Here are a extremely dificult pose to generate with stable diffusion, but with the `PyraCanny` and `CPDSA` we can generate a good results based on a existing image.
+
+![pose](./assets/hero_pose_1.jpg)
+
+![config](./assets/dificult_poses.png)
+Using `PyraCanny`at stopAt: 0.7 and weight: 1 and `CPDSA` at stopAt: 0.4 and weight 1 we can generate similar results, but for me it was not possible to generate good pose with sample of male body and prompt for female body but it was near.
+
+| Result 1                                         | Result 2                                         |
+| ------------------------------------------------ | ------------------------------------------------ |
+| ![Result 1](./assets/dificult_poses_result1.png) | ![Result 2](./assets/dificult_poses_result2.png) |
+
+### Clothing
+Now lets generate some images with different clothing, but with the same character we created before.
+
+Positive Prompt: `a beautiful woman, soft skin, freckles,  arkan blue eyes, cameron mila swift, blond hair, wearing a jacket, modeling with a jacket, on a empty room, white background`\
+Negative Prompt: `bad eyes, cgi, airbrushed, plastic, deformed, watermark`\
+seed: `644515184151156`\
+aspect ration: `1:1`
+
+| Imput Image StopAt:0,9 Weight: 1          | pyracanny stopAt:0,5, Weigth:1             | FaceSwap stopAt:0,9, Weigth:0,8           | FaceSwap stopAt:0,9, Weigth:0,8           |
+| ----------------------------------------- | ------------------------------------------ | ----------------------------------------- | ----------------------------------------- |
+| ![Imput Image](./assets/jeansJackect.jpg) | ![pyracanny](./assets/woman_in_jacket.jpg) | ![FaceSwap](./assets/from_grid_left2.png) | ![FaceSwap](./assets/from_grid_right.png) |
+
+Result:
+| Result 1                                   | Result 2                                   |
+| ------------------------------------------ | ------------------------------------------ |
+| ![Result 1](./assets/clothing_result1.png) | ![Result 2](./assets/clothing_result2.png) |
+
+#### Change cloth from a image
+
+Let`s create our character with a jacket, and then change the jacket after.
+
+Positive Prompt: `full body view of a beautiful woman, soft skin, freckles, arkan blue eyes, cameron mila swift, blond hair, wearing a jacket, jeans pants and black boots, modeling with a jacket, white background`\
+Negative Prompt: `bad eyes, cgi, airbrushed, plastic, deformed, watermark`\
+seed: `644515184151156`\
+aspect ration: `1:2` (for full body view)
+using `FaceSwap` for consistency.
+
+| Jacket (input Image, stopAt:0,8, weigth:0,8) | Left (faceSwap stopAt and Weigth: default) | Right (faceSwap stopAt and Weigth: default)  | center (faceSwap stopAt and Weigth: default)        |
+| -------------------------------------------- | ------------------------------------------ | -------------------------------------------- | --------------------------------------------------- |
+| ![Jacket](./assets/jeansJackect.jpg)         | ![Left](./assets/second_approach_left.png) | ![Right](./assets/second_approach_right.png) | ![first image](./assets/consistent_char_normal.png) |
+
+Now with the generated images, lets change the jacket.
+to the same jacket in the last sample.
+
+| Original                                         | Result                                       |
+| ------------------------------------------------ | -------------------------------------------- |
+| ![Original](./assets/char_clothing_original.png) | ![Result](./assets/char_clothing_result.png) |
+
+#### Exact clothing change (Masking)
+
+You can use Inpaint mask to wear a character with a exact clothing, like a jacket, a dress, a shirt, etc.
+![clothing mask](./assets/inpait_mask.png)
+
+
+Positive Prompt: `full body view of a beautiful woman, soft skin, freckles, arkan blue eyes, cameron mila swift, blond hair, wearing a dress, neckline, white background`\
+Negative Prompt: `bad eyes, cgi, airbrushed, plastic, deformed, watermark`\
+seed: `644515184151156`
+
+For the image prompts we will still use the same 3 `FaceSwap` images that we used before.
+in the inpaint tab, select we ***selected the cloth that we want to use as mask**, and then we selected the the `Enable advanced masking feature` checkbox, in the method I used `Modify content` with better results, then at the right select the `SAM (Segment anythings model)` Mask generation model, click on the `Generate mask from image` button,
+then above the selected SAM model, check `Invert mask when generating`, this will generate outside de mask, leting us to make someone wear the dress.
+With all this set, click on `Generate`.
+
+***The aspect ratio of the inpaint image and the result should be same or next to the same, an cleaner as possible to avoid distortion**
+
+| Original image                        | Inpaint input to mask edited before use(1:2) | Result                               |
+| ------------------------------------- | -------------------------------------------- | ------------------------------------ |
+| ![Original](./assets/pinup_dress.jpg) | ![Inpaint](./assets/pinup_dress2.jpg)        | ![Result](./assets/exact_result.png) |
+
+You can use **Mask erode or dilate** at the Advanced checkbox and inpaint tab to make the mask more precise, or use the inpaint mask to make the mask more precise.
+
+![mask_erode_dilate](./assets/mask_erode_dilate.png)
+
+So that is it. Here is one sample of the previous character holding a flask of perfume.
+![Result](./assets/char_holding_perfume.png)
+
+As you can see, we maintained the character hand and the flask, but changed evething else.
