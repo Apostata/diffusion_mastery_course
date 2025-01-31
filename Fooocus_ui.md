@@ -15,6 +15,9 @@ Summary:
 	- [Extra](#extra)
 		- [Consistent Characters](#consistent-characters)
 		- [Object placement](#object-placement)
+		- [Using Discribe](#using-discribe)
+		- [Using metadata to recreate images](#using-metadata-to-recreate-images)
+		- [Text in image](#text-in-image)
 		- [Juggernaut XL Prompt Guide](#juggernaut-xl-prompt-guide)
 
 ## How to use Fooocus
@@ -114,9 +117,26 @@ The input image settings checkbox is where you can change things like the inpain
 If you want to generate images with consistent characters, in the [Multiple controlnets](./Foocus_ui_input_image_checkbox.md#multiple-methods) section there is a sample use case of how to generate images with consistent characters, using `FaceSwap` and `PyraCanny` methods. One litte aditional thing is that you use the same `seed` instead of the random seed to generate the images with the same characters (this configuration is found at the [Random seed](./Fooocus_ui_advanced_checkbox.md#random-seed)).
 
 [Advanced consistent characters guide](./Fooocus_consistent_characters.md)
+[Coverte a picture to anime and vice-versa](./Fooocus_convert_image_to_anime.md)
 
 ### Object placement
 You can change Object placement in the image, 
+take a look at [Object Placement](./object_placement.md)
+
+### Using Discribe
+You can use Discribe to generate prompts from images.
+Here is a guide on how to use Discribe in conjunction image prompts to generate a anime version of a photo, [Convert a photo into anime](./Fooocus_convert_image_to_anime.md)
+
+
+### Using metadata to recreate images
+You can use metadata to recreate images, here is a guide on how to use metadata to recreate images, [Recreate image with metadata](./Fooocus_metadata.md)
+
+### Text in image
+You can have a hard time trying to generate images with text in it. So Stable diffusion is not recommended for this task. You can create the image an in aother program add the text to it.
+But if you want to try, in the prompt you cand add the text:
+`cat holding a sign with the letters "FEED ME HUMAN"`
+As you notice, the prompt has a double quoted text in uppercase, this is the text that you want to add to the image. 
+But remember, the result may not be what you expect.
 
 ### Juggernaut XL Prompt Guide
 As de default checkpoint of `Fooocus` is Juggernaut XL, here is a link to guide a good prompt for this model: [Juggernaut XL Prompt Guide](https://learn.rundiffusion.com/prompt-guide-for-juggernaut-xi-and-xii/)

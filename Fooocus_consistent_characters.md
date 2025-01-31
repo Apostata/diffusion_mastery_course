@@ -223,3 +223,21 @@ So that is it. Here is one sample of the previous character holding a flask of p
 ![Result](./assets/char_holding_perfume.png)
 
 As you can see, we maintained the character hand and the flask, but changed evething else.
+
+
+### Creating a character withe especific hair style
+
+You can get an especific hair style from another image and apply to your character
+
+First, make sure the output forma is the same as the reference, in this case `1024x1024`.
+
+Get the reference and apply `Image prompt` to the image, we used about `0,9` at `stop At` and `0,9` at `weight`
+In the `Advanced` checkbox, select the `Developer debug mode` and then the `Control` tab, check the `Mixing Image Prompt and Inpaint` checkbox.
+Then in the `Inpaint or Outpaint` tab, select the the area that you want, here we selected the hair and at the `Method`, `Modify Content` with additional prompt of `sort hair` but the default `Inpaint or Outpaint` gave same result.
+Now click on `Generate`.
+
+![Reference](./assets/hairStyleSteps.png)
+
+| Reference Image                       | Original Image                                | Result                                     |
+| ------------------------------------- | --------------------------------------------- | ------------------------------------------ |
+| ![Reference](./assets/hair_style.png) | ![Original](./assets/hair_style_original.png) | ![Result](./assets/hair_style_changed.png) |
