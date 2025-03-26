@@ -15,6 +15,11 @@ in a layman's terms, Diffusion models are a type of AI that generate images from
 * [chatGPT and Dall-e](./chatgpt_dalle.md)
 * [Stable Diffusion](./stable_difusion.md)
 * [Fooocus UI](./Fooocus_ui.md)
+* [Flux Models](./flux_models.md)
+* [Forge UI](./forge_ui.md)
+* [Confy UI](./confy_ui.md)
+* [Leonardo AI](./leonardo_IA.md)
+* [Midjourney](./midjourney.md)
 
 ## References and copyrigths
 This is a summary, for reference of the course [Diffusion Mastery: Flux, Stable Diffusion, Midjourney & more](https://www.udemy.com/course/diffusion-mastery-flux-stable-diffusion-midjourney-more), ministred by [`Arnold Oberleiter`](https://www.udemy.com/user/arnold-oberleiter/) at [`Udemy`](https://www.udemy.com/). The original content is protected by copyright and all rights are reserved to the author.
